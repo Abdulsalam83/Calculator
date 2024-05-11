@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Calculator</title>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body style="background-color: rgb(0, 89, 91);">
+  <div class="calculator" style="background-color:  rgb(0, 89, 91); align-items: center;">
+    <input type="text" id="display" class="display" readonly style="background-color: rgb(250, 250, 250);">
+    <div class="buttons">
+      <button style="background-color: rgb(139, 6, 6); color: rgb(255, 255, 255);"  onclick="clearDisplay()">C</button>
+      <button style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"onclick="appendValue(7)">7</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(8)">8</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(9)">9</button>
+      <button style="background-color: rgb(0, 153, 255); color: rgb(255, 255, 255);" onclick="appendOperator('/')">÷</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(4)">4</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(5)">5</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(6)">6</button>
+      <button style="background-color: rgb(0, 153, 255); color: rgb(255, 255, 255);"onclick="appendOperator('*')">×</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(1)">1</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(2)">2</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(3)">3</button>
+      <button style="background-color: rgb(0, 153, 255); color: rgb(255, 255, 255);"onclick="appendOperator('-')">-</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendValue(0)">0</button>
+      <button style="background-color: black; color: rgb(255, 255, 255);"onclick="appendOperator('.')">.</button>
+      <button style="background-color: rgb(139, 6, 6); color: rgb(255, 255, 255);"onclick="calculate()">=</button>
+      <button style="background-color: rgb(0, 153, 255); color: rgb(255, 255, 255);"onclick="appendOperator('+')">+</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
